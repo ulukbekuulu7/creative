@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#header {
+    background: grey;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+    backdrop-filter: blur(6px);
+}
+
+.header {
+    animation: ani 1.7s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar h1 {
+    font-weight: 600;
+    color: #27a7ab;
+    line-height: 25px;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.navbar span {
+    font-weight: 600;
+    color: #99ff00;
+    line-height: 25px;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 19px;
+    color: orange;
+    transition: .4s;
+}
+
+.nav a:hover {
+    text-decoration-line: underline;
+}
+
+.btn button {
+    padding: 8px 30px;
+    cursor: pointer;
+    color: orange;
+    background: #b400fd;
+    border: none;
+    border-radius: 60px;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.btn button:hover {
+    background: #591a73;
+    color: rgba(255, 164, 0, 0.96);
+}
+
+#hero {
+    padding: 100px 0;
+}
+
+.hero {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.hero-one h1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: orange;
+    font-size: 25px;
+    margin: 20px 0;
+    animation: lol 3s;
+}
+
+@keyframes lol {
+    0%{
+        transform:translateX(-600px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+.hero-one p {
+    font-weight: 500;
+    line-height: 25px;
+    color: orange;
+    font-size: 19px;
+    animation: lol 3s;
+}
+
+@keyframes lol {
+    0%{
+        transform:translateX(-600px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+.hero-two img {
+    width: 430px;
+    height: 470px;
+    animation: one 3s;
+}
+
+@keyframes one {
+    0% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hero-one button {
+    padding: 8px 35px;
+    border: 2px solid #a050cb;
+    background: none;
+    border-radius: 50px;
+    transition: .4s;
+    margin: 70px 0;
+    font-size: 16px;
+    color: red;
+    animation: bounce 1000ms alternate infinite cubic-bezier(.2, .65, .6, 1);
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+
+.hero-one button:hover {
+    background: #a050cb;
+    border: none;
+    color: orange;
+    transform: scale(0.9);
+}
+
+.swiper {
+    width: 240px;
+    height: 320px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slider{
+    padding: 50px 0;
+}
+
+.slider{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.slider-text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: orange;
+    margin: 30px 0;
+}
+
+.slider-text h1 {
+    font-weight: 600;
+    font-size: 25px;
+    color: orange;
+}
+
+.slider-text a{
+    font-size: 30px;
+    margin: 0 15px;
+    color: #ff004d;
+    transition: .4s;
+}
+
+.slider-text a:hover {
+    color: #00ffef;
+    transform: scale(1.3);
+}
+
+#video{
+    padding: 50px 0;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
